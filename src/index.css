@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.animation {
+  @apply transition-all duration-150 ease-linear;
+}
+.animation-color {
+  @apply transition-colors duration-150 ease-linear;
+}
+.animation-shadow {
+  @apply transition-shadow duration-150 ease-linear;
+}
+.div-center {
+  @apply flex justify-center items-center h-screen;
+}
+.input-box {
+  @apply w-[215px] h-[48px] border border-black dark:border-gray-50 focus:border-none focus:neon-sky  dark:focus:neon-amber rounded-md outline-none p-3 dark:text-white;
+}
+.nav-button {
+  @apply btn btn-ghost hover:neon-rose;
+}
+.button {
+  @apply text-center h-[3rem] w-auto p-3 rounded-lg bg-purple-500 text-white hover:bg-pink-400 focus:scale-105  animation-color;
+}
+.hero-card {
+  @apply flex flex-col justify-center items-center lg:w-96 w-80 lg:h-96 h-80 border text-center  p-4 rounded-xl hover:cursor-pointer hover:shadow-xl hover:shadow-gray-500 animation;
+}
+.subscribe-card {
+  width: 70%;
+  padding: 10px;
+
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+  opacity: 1;
+  transition: background 0.3s ease, opacity 0.3s ease;
+}
+.subscribe-card:hover {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  opacity: 0.9;
+}
